@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Aryan Portfolio</title>
+
+    <script src="https://kit.fontawesome.com/00b031a87e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <img src="images/logo.png">
+            <ul id="sidemenu">
+                <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+        <div class="iam">
+            
+            <h1>Hi, I'm <span>Aryan</span> </h1>
+            
+            <p>Web Developer</p>
+        </div>
+    </div>
+
+<!----------------------------ABOUT---------------------------------------->
+
+    <div id="about">
+        <h1 class="subheading">About Me</h1>
+        <p>
+            Hello there! I'm <b>Aryan Bisht</b>, currently pursuing a <b>B.Tech in Computer Science and Engineering</b> at <b>UPES</b>, Dehradun. I'm already immersed in the world of <b>fullstack web development</b>. <b>Java</b> is my forte, and I enjoy crafting both <b>front-end</b> and <b>back-end</b> solutions. I thrive on learning and always look forward to <b>mastering new skills</b>. Join me as I navigate the ever-changing tech landscape and create innovative digital experiences.
+            
+        </p>
+        <div class="tab-links">
+            <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+            <!-- <p class="tab-link">Experience</p> -->
+            <p class="tab-link" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li>Front-End Web Development :-<span> HTML &nbsp CSS &nbsp JAVASCRIPT</span></li>
+                <li>Backend-End Web Development :-<span> NodeJS &nbsp MongoDB &nbsp Express</span></li>
+            </ul>
+        </div>
+        <!-- <div class="tab-contents">
+            <ul>
+                <li>Ex :-<span> HTML &nbsp CSS &nbsp JAVASCRIPT</span></li>
+                <li>Backend-End Web Development :-<span> NodeJS &nbsp MongoDB &nbsp Express</span></li>
+            </ul>
+        </div> -->
+        <div class="tab-contents" id="education">
+            <ul>
+                <li>BTECH (2022-26) UPES Dehradun :-<span> CGPA :8.95</span></li>
+                <li>Class 12th (The Asian School Dehradun) :-<span> Percentage : 93%</span></li>
+                <li>Class 10th (The Asian School Dehradun) :-<span> Percentage : 94%</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+<!-- ----------------------------Services---------------------------------------- -->
+
+
+    <div id="services">
+        <h1 class="subheading">My Services</h1>
+        <div class="service-list">
+            <div>
+                
+                <h2><i class="fa-brands fa-html5"></i> &nbsp&nbsp Front-End Development</h2>
+                <div class="service-list-container">
+                    <div class="slist">HTML</div>
+                    <div class="slist">CSS</div>
+                    <div class="slist">React</div>
+                    <div class="slist">Rust</div>
+                    <div class="slist">JAVASCRIPT</div>
+                </div>
+            </div>
+            <div>
+                
+                <h2><i class="fa-brands fa-node"></i> &nbsp&nbsp Back-End Development</h2>
+                <div class="service-list-container">
+                    <div class="slist">NodeJS</div>
+                    <div class="slist">MongoDB</div>
+                    <div class="slist">Express</div>
+                    <div class="slist">React</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- ----------------------------Profolio---------------------------------------- -->
+
+
+    <div id="portfolio">
+
+        <h1 class="subheading">My Work</h1>
+        <div class="work-container" id="wc">
+            <a href="https://quiz-game-694p.onrender.com"><div class="work-list">
+                <img src="images/quizgame.jpg">
+                <div class="layer">
+                    <h3>Quiz App</h3>
+                </div>
+            </div></a>
+            <a href="https://chatting-app-y827.onrender.com">
+                <div class="work-list">
+                    <img src="images/chat app.avif">
+                    <div class="layer">
+                        <h3>Chat App</h3>
+                    </div>
+                </div>
+            </a>
+            <div class="work-list">
+                <img src="images/calculator_53876-43878.jpg">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                </div>
+            </div>
+        </div>
+        <button id="sm" onclick="seemore()">SEE MORE</button>
+    </div>
+    
+        <!-- ----------------------------Profolio---------------------------------------- -->
+
+    
+    <div id="contact">
+        <div class="contact-container">
+            <div class="contact-details">
+                <h1 class="subheading">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>aryanbisht2580@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 8755552378</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/aryan-bisht-116417211/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/aryanbisht2580"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/silverlining certificate.pdf" download><button class="btn">Download CV</button></a>
+            </div>
+            <div class="contact-form">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="6" ></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Aryan. Made with <i class="fa-solid fa-heart"></i> by Aryan Bisht</p>
+
+    </div>
+    <script src="res.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxUiKvMCoemHjngSE8L-WJxSjDttbIttz-TNQ5QMoo7ZZta7RXlsh3FriOCyul31igZ/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg=document.getElementById("msg");
+        
+        
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent!"
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },3000)
+                form.reset();
+                
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+body{
+    /* background-color:black; */
+    box-sizing:content-box;
+    height:auto;
+    margin:0;
+    padding:0;
+    color:white;
+    font-family:sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    overflow: auto;
+    /* padding-top: 100px; */
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: white;
+}
+#header{
+    margin: 0;
+    height: 100vh;
+    width:100%;
+    background-image: url(images/new_big.jpg);
+    background-repeat: no-repeat;
+    background-position:bottom right;
+    background-size: contain;
+    background-attachment: fixed;
+    
+}
+.container{
+    height:15%;
+    width:100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    /* overflow: hidden; */
+    /* background-color: red; */
+    /* margin: 0; */
+
+}
+.container .fa-solid{
+    display: none;
+}
+.container img{
+    height:50%;
+}
+.container ul{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+.container ul li{
+    display: inline-block;
+    padding:0 30px;
+}
+
+.container ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.8s;
+    position: relative;
+}
+
+.container ul li a:hover{
+    color: red;
+    
+}
+.container ul li a::before{
+    content: '';
+    position: absolute;
+    width:0;
+    height: 3px;
+    background-color: red;
+    bottom:-6px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+.container ul li a:hover::before{
+    width:100%;
+}
+
+.iam{
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    /* padding: 50px; */
+    width:50%;
+    /* background-color: red;   */
+}
+.iam p{
+    font-size: 1rem;
+    margin-top: 0;
+}
+.iam h1{
+    font-size: 5rem;
+    word-spacing: 3px;
+    margin-bottom: 1rem;
+    
+}
+
+.iam span{
+    color:red
+}
+
+.fa-bars{
+    margin-right:20px;
+}
+
+
+
+/* <!----------------------------ABOUT----------------------------------------> */
+
+
+#about{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+#about p{
+    font-family: cursive;
+    font-size: 1.2rem;
+    margin:25px;
+}
+
+.tab-links{
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:30px;
+}
+
+.tab-link{
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::before{
+    content: '';
+    width:0;
+    height:3px;
+    background-color: red;
+    position: absolute;
+    bottom: -7px;
+    border-radius: 2px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.active-link.active-link::before{
+    width: 100%;
+}
+
+.tab-contents{
+    margin-top: 30px;
+    width:80%;
+    /* justify-content: flex-start; */
+    line-height: 2rem;
+}
+
+.tab-contents ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tab-contents ul li {
+    font-size: 1rem;    
+}
+
+.tab-contents ul li span{
+    color:red;   
+    font-size: 0.8rem;  
+}
+
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+
+.subheading{
+    font-size: 4rem;
+    margin:100px 0;
+    width:100%;
+    text-align: center;
+
+}
+
+
+/* <!-- ----------------------------Services---------------------------------------- --> */
+
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:90%;
+}
+.service-list{
+    margin: 30px 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.service-list>div{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgb(45, 44, 44);
+    /* width:100%; */
+    height:40vh;
+    border-radius: 1rem;
+    padding:20px;
+    transition: all 0.5s ;
+}
+.service-list>div h2{
+    color:rgb(220, 220, 220);
+}
+
+.service-list>div h2 i{
+    font-size: 2rem;
+}
+
+.service-list>div:hover{
+    background-color: rgb(212, 0, 0);
+    transform: translateY(-10px);
+    
+}
+
+.service-list-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width:80%;
+
+}
+.slist{
+    margin:10px;
+    font-size:1.1rem;
+    border:1.2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bolder;
+    background-color: white;
+    color:black;
+}
+
+
+
+
+/* <!-- ----------------------------Profolio---------------------------------------- --> */
+
+
+#portfolio{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.work-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:90%;
+    height: 310px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+.work-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:300px;
+    width:300px;
+    background-color: antiquewhite;
+    border:1px solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.work-list img{
+    height: 320px;
+    width:400px;
+    transition: 0.5s;
+    
+}
+.layer{
+    font-family: cursive;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    width:100%;
+    height:0;
+    position: absolute;
+    bottom:0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(206, 206, 206,0.5),rgb(213, 43, 43,0.5));
+}
+
+.work-list:hover img{
+    transform: scale(1.1);
+}
+
+
+.work-list:hover .layer{
+    height:100%;
+}
+
+#portfolio button{
+    margin-top: 80px;
+    background: transparent;
+    color:white;
+    padding:10px;
+    transition: 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+    border:1px solid white;
+}
+
+#portfolio button:hover{
+    background-color: red;
+
+}
+
+
+
+/* -------------------Contact------------------ */
+
+
+#contact{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    height:70vh;
+    /* background-color: blue; */
+    overflow: hidden;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width:90%;
+}
+.contact-details{
+    flex-basis: 35%;
+    padding-left: 20px;
+    /* background-color: red; */
+    
+}
+
+.contact-form{
+    flex-basis: 60%;
+
+    /* background-color: red; */
+}
+
+.contact-details p{
+    margin-bottom:25px;
+}
+
+.contact-details p i{
+    margin-right:1rem;
+    font-size: 1.5rem;
+    color:red;
+}
+.contact-details .subheading{
+    margin:40px 0 40px;
+    text-align: left;
+}
+
+.social-icons{
+    margin:40px 0;
+}
+.social-icons i{
+    font-size: 1.7rem;
+    margin:0 10px;
+    color:rgb(209, 209, 209);
+    transition: 0.5s;
+}
+.social-icons i:hover{
+    color:red;
+    transform: translateY(-5px);
+}
+
+.btn{
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom:25px;
+    height:50px;
+    width:150px;
+    color:white;
+    background-color: rgb(71, 71, 71);
+    /* margin-left: 20px; */
+}
+.btn:hover{
+    background-color: red;
+}
+form input,form textarea{
+    width:100%;
+    margin:11px 0;
+    font-size: 18px;
+    background-color: rgb(45, 45, 45);
+    padding:15px;
+    color:white;
+    border:0;
+    border-radius: 10px;
+    outline: none;
+}
+
+.copyright {
+    color: rgb(176, 176, 176);
+    margin-top:30px;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.copyright i{
+    color: red;
+}
+
+#msg{
+    color: white;
+    margin-top: -10px;
+    font-size: 0.8rem;
+    /* background-color: red; */
+}
+
+/* -----------css for small screen----------- */
+
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/new_small.jpg); 
+        background-position: bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:100%;
+        /* background-color: white; */
+    }
+    .iam{
+        justify-content: flex-end;
+        width:100%;
+        /* background-color: red;   */
+    }
+    .iam h1{
+        font-size: 2rem;
+    }
+    .container .fa-solid{
+        display: block;
+    }
+    .container ul{
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        background-color: rgb(79, 79, 79);
+        top:0;
+        right:-200px;
+        height:100vh;
+        width:200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:flex-start;
+        transition: 0.5s;
+        
+    }
+    .container ul li{
+        margin:0px;
+        padding: 30px;
+        font-size: 1.1rem;
+        /* background-color: red; */
+    }
+    .fa-xmark{
+        font-size: 1.8rem;
+        padding-bottom: -10px;
+        color: red;
+    }
+    .subheading{
+        margin: 2.5rem;
+    }
+
+    #about p{
+        font-size: 0.8rem;
+    }
+
+    .tab-contents ul li{
+        font-size: 0.8rem;
+    }
+    .tab-contents ul li span{
+        font-size: 0.7rem;
+    }
+    
+    #contact{
+        height: 105vh;
+    }
+    #contact .subheading{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-details{
+        width:80%;
+        padding-left: 20px;
+        /* background-color: red; */
+        
+    }
+    
+    .contact-form{
+        width:80%;
+    }
+    
+    form input,form textarea{
+        width:100%;
+        margin:11px 0;
+        font-size: 12px;
+        background-color: rgb(45, 45, 45);
+        padding:10px;
+        color:white;
+        border:0;
+        border-radius: 10px;
+        outline: none;
+    }
+    
+}
