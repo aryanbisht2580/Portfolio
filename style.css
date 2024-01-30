@@ -561,3 +561,12 @@ form input,form textarea{
     }
     
 }
+
+@media only screen and (max-width:430px){
+    #header{
+        height:80vh;
+        background-position: center;
+        /* box-shadow: 10px 0 5 15; */
+
+    }
+}
